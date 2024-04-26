@@ -1,0 +1,12 @@
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\muhammad.hussain\Desktop\Learning\Dotnet Projects\BazaarJunction\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache

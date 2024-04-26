@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Domain.Aggregates.UserRole">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <AssociationLine Name="Role" Type="Domain.Entities.Role" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.375" />
+        <Point X="2.587" Y="6.375" />
+        <Point X="2.587" Y="8.312" />
+        <Point X="2" Y="8.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.06" Y="1.993" Height="0.182" Width="0.828" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="User" Type="Domain.Entities.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="5.938" />
+        <Point X="2.583" Y="5.938" />
+        <Point X="2.583" Y="4.25" />
+        <Point X="2" Y="4.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.102" Y="0.093" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAIAAAAAAAAAEAAAAAgAAAAAAAAAAAAABCAAAAA=</HashCode>
+      <FileName>Aggregates\UserRole.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Role" />
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Entities.Category">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgCAAAACAAAAQAAAAAAgAAAAAAAQAAAAA=</HashCode>
+      <FileName>Entities\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.Customer">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.Order">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <AssociationLine Name="Customer" Type="Domain.Entities.Customer" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="4.963" />
+        <Point X="7.125" Y="4.963" />
+        <Point X="7.125" Y="3.438" />
+        <Point X="5" Y="3.438" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.343" Y="0.068" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAECAAAAAAESAAAAAAAAAAAAAAAAABQAAAAAIAAAAAA=</HashCode>
+      <FileName>Entities\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Entities.OrderItem">
+    <Position X="9.75" Y="6" Width="1.5" />
+    <AssociationLine Name="Order" Type="Domain.Entities.Order" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.375" Y="6" />
+        <Point X="10.375" Y="4.938" />
+        <Point X="9" Y="4.938" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.277" Y="0.027" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAECAEAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Entities\OrderItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Order" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Entities.Product">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgCgAAACAAAIQAAAAAAgBAAAAAAQAICAA=</HashCode>
+      <FileName>Entities\Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+      <Property Name="Vendor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Entities.ProductImage">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Product" Type="Domain.Entities.Product" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.719" Y="3.25" />
+        <Point X="11.719" Y="2.817" />
+        <Point X="9.5" Y="2.817" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EQACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ProductImage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Entities.Role">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.ShoppingCart">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAACAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ShoppingCart.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Entities.ShoppingCartItem">
+    <Position X="5.75" Y="7.75" Width="1.75" />
+    <AssociationLine Name="ShoppingCart" Type="Domain.Entities.ShoppingCart" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="7.75" />
+        <Point X="6.769" Y="7.75" />
+        <Point X="6.769" Y="6.25" />
+        <Point X="5.5" Y="6.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.193" Y="0.035" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAEAAAAAAAAgAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Entities\ShoppingCartItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ShoppingCart" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Entities.User">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACCAEAAACAAAACIMQAAQAAAAAIQAAgAAgIABAAAAAg=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Entities.Vendor">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Vendor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
